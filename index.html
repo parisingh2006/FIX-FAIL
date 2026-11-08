@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FIX-FAIL | Civic Fix Verification</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="nav-inner">
+            <div class="logo">FIX-FAIL</div>
+
+            <nav>
+                <a href="#problem">Problem</a>
+                <a href="#how">How It Works</a>
+                <a href="#cases">Cases</a>
+                <a href="#impact">Impact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">CIVIC FIX VERIFICATION</p>
+
+                <h1>
+                    Don't just mark it fixed.
+                    <span>Prove it.</span>
+                </h1>
+
+                <p class="hero-description">
+                    FIX-FAIL checks whether a civic intervention actually solved
+                    the original problem by comparing what happened before,
+                    what action was taken, and what happened afterward.
+                </p>
+
+                <div class="hero-buttons">
+                    <button onclick="loadCases()" class="primary-button">
+                        Check Civic Cases
+                    </button>
+
+                    <a href="#how" class="secondary-button">
+                        See How It Works
+                    </a>
+                </div>
+
+                <p class="demo-note">
+                    Prototype demonstration using controlled cases.
+                    These examples are not presented as verified real-world incidents.
+                </p>
+
+            </div>
+
+            <div class="hero-card">
+
+                <p class="card-label">CORE DECISION</p>
+
+                <div class="decision-box fail">
+                    <strong>FIX-FAIL</strong>
+                    <span>Problem still remains</span>
+                </div>
+
+                <div class="decision-box verified">
+                    <strong>FIX-VERIFIED</strong>
+                    <span>Intended function restored</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROBLEM -->
+
+        <section id="problem" class="section">
+
+            <div class="section-heading">
+                <p class="eyebrow">THE PROBLEM</p>
+
+                <h2>
+                    An action being completed does not always mean
+                    the problem was solved.
+                </h2>
+            </div>
+
+            <div class="problem-grid">
+
+                <div class="info-card">
+                    <div class="number">01</div>
+                    <h3>Problem reported</h3>
+                    <p>
+                        A civic issue affects people or public infrastructure.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <div class="number">02</div>
+                    <h3>Action taken</h3>
+                    <p>
+                        An intervention is performed and may be marked completed.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <div class="number">03</div>
+                    <h3>Reality checked</h3>
+                    <p>
+                        The actual outcome is compared against the intended outcome.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="insight-box">
+                <strong>FIX-FAIL asks a different question:</strong>
+                Was the original civic problem actually resolved?
+            </div>
+
+        </section>
+
+
+        <!-- HOW IT WORKS -->
+
+        <section id="how" class="section dark-section">
+
+            <div class="section-heading">
+                <p class="eyebrow">HOW IT WORKS</p>
+
+                <h2>From intervention to verified outcome</h2>
+            </div>
+
+            <div class="workflow">
+
+                <div class="workflow-step">
+                    <span>01</span>
+                    <h3>Original Problem</h3>
+                    <p>What was wrong?</p>
+                </div>
+
+                <div class="arrow">→</div>
+
+                <div class="workflow-step">
+                    <span>02</span>
+                    <h3>Action Taken</h3>
+                    <p>What intervention happened?</p>
+                </div>
+
+                <div class="arrow">→</div>
+
+                <div class="workflow-step">
+                    <span>03</span>
+                    <h3>Expected Outcome</h3>
+                    <p>What should have changed?</p>
+                </div>
+
+                <div class="arrow">→</div>
+
+                <div class="workflow-step">
+                    <span>04</span>
+                    <h3>Actual Outcome</h3>
+                    <p>What actually happened?</p>
+                </div>
+
+                <div class="arrow">→</div>
+
+                <div class="workflow-step final-step">
+                    <span>05</span>
+                    <h3>Verification</h3>
+                    <p>FIX-VERIFIED or FIX-FAIL</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CASES -->
+
+        <section id="cases" class="section hidden">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">CONTROLLED DEMO CASES</p>
+
+                <h2>Choose a civic problem</h2>
+
+                <p>
+                    Each case demonstrates how FIX-FAIL evaluates an intervention.
+                </p>
+
+            </div>
+
+            <div id="casesContainer"></div>
+
+        </section>
+
+
+        <!-- RESULT -->
+
+        <section id="resultSection" class="section hidden">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">VERIFICATION RESULT</p>
+
+                <h2>Did the intervention actually work?</h2>
+
+            </div>
+
+            <div id="resultContainer"></div>
+
+        </section>
+
+
+        <!-- IBM -->
+
+        <section class="section ibm-section">
+
+            <div>
+
+                <p class="eyebrow">IBM WATSONX ORCHESTRATE</p>
+
+                <h2>AI-assisted civic fix verification</h2>
+
+                <p>
+                    FIX-FAIL uses the deployed
+                    <strong>FIX_FAIL_ANALYZER</strong> agent to compare the
+                    original problem, intervention, expected outcome and actual
+                    outcome.
+                </p>
+
+            </div>
+
+            <div class="architecture">
+
+                <div>Problem</div>
+                <span>→</span>
+                <div>Action</div>
+                <span>→</span>
+                <div>Outcome</div>
+                <span>→</span>
+                <div class="architecture-result">
+                    IBM<br>Agent
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- IMPACT -->
+
+        <section id="impact" class="section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">PROTOTYPE RESULTS</p>
+
+                <h2>What we have demonstrated</h2>
+
+            </div>
+
+            <div class="metrics">
+
+                <div class="metric">
+                    <strong>2/2</strong>
+                    <span>Evaluation tests passed</span>
+                </div>
+
+                <div class="metric">
+                    <strong>100%</strong>
+                    <span>Evaluation success rate</span>
+                </div>
+
+                <div class="metric">
+                    <strong>2</strong>
+                    <span>Verification outcomes</span>
+                </div>
+
+                <div class="metric">
+                    <strong>1</strong>
+                    <span>Live FIX-FAIL analyzer</span>
+                </div>
+
+            </div>
+
+            <p class="metrics-note">
+                These are controlled prototype evaluation results, not city-wide
+                performance statistics.
+            </p>
+
+        </section>
+
+
+        <!-- FINAL CTA -->
+
+        <section class="final-cta">
+
+            <p class="eyebrow">THE CORE IDEA</p>
+
+            <h2>
+                A completed action is not the same as a solved problem.
+            </h2>
+
+            <p>
+                FIX-FAIL makes the outcome visible.
+            </p>
+
+            <button onclick="loadCases()" class="primary-button">
+                Try FIX-FAIL
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div>
+            <strong>FIX-FAIL</strong>
+            <p>Don't just mark it fixed. Prove it.</p>
+        </div>
+
+        <p>
+            Civic Resolution Verification Prototype
+        </p>
+
+    </footer>
+
+
+    <!-- IBM WATSONX ORCHESTRATE EMBED -->
+
+    <div id="root"></div>
+
+    <script>
+
+        window.wxOConfiguration = {
+            orchestrationID: "20261108-0557-3503-5001-7f37eb351071_20261108-0557-3632-6023-4117eb413162",
+            hostURL: "https://ap-south-1.dl.watson-orchestrate.ibm.com",
+            rootElementID: "root",
+            chatOptions: {
+                agentId: "bcddc564-cd44-4334-95fc-6d05a92a8535"
+            }
+        };
+
+        setTimeout(function () {
+
+            const script = document.createElement("script");
+
+            script.src =
+                `${window.wxOConfiguration.hostURL}/wxochat/wxoLoader.js?embed=true`;
+
+            script.addEventListener("load", function () {
+
+                wxoLoader.init();
+
+            });
+
+            document.head.appendChild(script);
+
+        }, 0);
+
+    </script>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

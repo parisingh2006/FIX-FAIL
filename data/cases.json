@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "location": "Bengaluru",
+        "problem": "Footpath blocked by construction debris",
+        "before": "Pedestrians were forced to walk on the road.",
+        "action": "Construction material was removed.",
+        "expected": "The footpath should become fully usable for pedestrians.",
+        "after": "Large debris remained on part of the footpath.",
+        "status": "FIX-FAIL",
+        "reason": "The intervention reduced the obstruction, but the intended pedestrian access was not fully restored.",
+        "recommendation": "Remove the remaining debris and verify pedestrian access again."
+    },
+    {
+        "id": 2,
+        "location": "Bengaluru",
+        "problem": "Blocked storm-water drain",
+        "before": "Water accumulated near the road during rainfall.",
+        "action": "The drain blockage was completely cleared.",
+        "expected": "Water should flow normally through the drain.",
+        "after": "Water flowed normally after rainfall.",
+        "status": "FIX-VERIFIED",
+        "reason": "The obstruction was removed and the intended drainage function was restored.",
+        "recommendation": "Continue periodic inspection during rainfall."
+    },
+    {
+        "id": 3,
+        "location": "Bengaluru",
+        "problem": "Damaged pedestrian pathway",
+        "before": "Broken pavement created an unsafe walking area.",
+        "action": "The damaged section was repaired.",
+        "expected": "The pedestrian pathway should be safe and accessible.",
+        "after": "A nearby section remained difficult to access.",
+        "status": "FIX-FAIL",
+        "reason": "The repaired section improved the path, but accessibility remained incomplete.",
+        "recommendation": "Inspect the surrounding pathway and complete the accessibility repair."
+    }
+]
